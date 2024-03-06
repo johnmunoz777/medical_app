@@ -22,7 +22,7 @@ class_mapping = {category: index for index, category in enumerate(sorted(all_cat
 numeric_labels = list(range(len(all_categories)))
 
 from tensorflow.keras.models import load_model
-model = load_model('C:/Users/johnm/images_project/inception_final.h5')
+model = load_model('inception_final.h5')
 
 inverse_class_mapping = {v: k for k, v in class_mapping.items()}
 
